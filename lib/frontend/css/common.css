@@ -1,5 +1,5 @@
 .wp-block-cover{
-	overflow: visible;
 	height:auto;
 	margin:auto;
+	overflow:visible !important;
 }
