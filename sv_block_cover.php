@@ -15,8 +15,6 @@
 		public function init() {
 			$this->set_module_title( __( 'Block: Cover', 'sv100' ) )
 				->set_module_desc( __( 'Settings for Gutenberg Block', 'sv100' ) )
-				->load_settings()
-				->register_scripts()
 				->set_section_title( $this->get_module_title() )
 				->set_section_desc( $this->get_module_desc() )
 				->set_section_type( 'settings' )
@@ -64,6 +62,10 @@
 		public function enqueue_scripts(): sv_block_cover {
 			if(!$this->has_block_frontend('cover')){
 				return $this;
+			}
+
+			if(!is_admin()){
+				$this->load_settings()->register_scripts();
 			}
 
 			$this->get_script( 'common' )->set_is_enqueued();
