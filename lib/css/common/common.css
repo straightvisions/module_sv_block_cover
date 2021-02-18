@@ -10,10 +10,10 @@ Styles for positioning of cover image are currently (v9.8.1, v10.0.0) loaded in 
 This snippets loads it in frontend
 @todo: remove once fixed in Gutenberg
  */
-.wp-block-cover-image img.wp-block-cover__image-background,
-.wp-block-cover img.wp-block-cover__image-background,
-.wp-block-cover-image picture.wp-block-cover__image-background,
-.wp-block-cover picture.wp-block-cover__image-background
+.wp-block-cover-image > img.wp-block-cover__image-background,
+.wp-block-cover > img.wp-block-cover__image-background,
+.wp-block-cover-image > picture.wp-block-cover__image-background,
+.wp-block-cover > picture.wp-block-cover__image-background
 {
 	position: absolute;
 	top: 0;
@@ -31,4 +31,10 @@ This snippets loads it in frontend
 	outline: none;
 	border: none;
 	box-shadow: none;
+}
+.wp-block-cover-image > picture > img,
+.wp-block-cover > picture > img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
