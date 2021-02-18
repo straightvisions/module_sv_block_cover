@@ -6,11 +6,15 @@
 
 /* @MB / Gutenberg Fix:
 Cover Image is now an img instead of bg.
-Styles for positioning of cover image are currently (v9.8.1) loaded in Editor only.
+Styles for positioning of cover image are currently (v9.8.1, v10.0.0) loaded in Editor only.
 This snippets loads it in frontend
 @todo: remove once fixed in Gutenberg
  */
-.wp-block-cover-image img.wp-block-cover__image-background, .wp-block-cover img.wp-block-cover__image-background {
+.wp-block-cover-image img.wp-block-cover__image-background,
+.wp-block-cover img.wp-block-cover__image-background,
+.wp-block-cover-image picture.wp-block-cover__image-background,
+.wp-block-cover picture.wp-block-cover__image-background
+{
 	position: absolute;
 	top: 0;
 	left: 0;
