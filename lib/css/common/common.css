@@ -2,6 +2,17 @@
 	height:auto;
 	margin:auto;
 	overflow:visible !important;
+	/* hotfix for broken block for categories */
+	position:relative;
+	background-size: cover;
+	background-position: 50%;
+	min-height: 430px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 1em;
+	box-sizing: border-box;
 }
 
 /* @MB / Gutenberg Fix:
