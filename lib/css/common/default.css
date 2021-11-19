@@ -63,6 +63,12 @@
 	z-index: 1;
 	opacity: 0.5;
 }
+.wp-block-cover-image.has-background-dim.has-background-dim-0:not(.has-background-gradient),
+.wp-block-cover-image.has-background-dim.has-background-dim-0 .wp-block-cover__gradient-background,
+.wp-block-cover .has-background-dim.has-background-dim-0:not(.has-background-gradient),
+.wp-block-cover .has-background-dim.has-background-dim-0 .wp-block-cover__gradient-background {
+	opacity: 0;
+}
 .wp-block-cover-image.has-background-dim.has-background-dim-10:not(.has-background-gradient),
 .wp-block-cover-image.has-background-dim.has-background-dim-10 .wp-block-cover__gradient-background,
 .wp-block-cover .has-background-dim.has-background-dim-10:not(.has-background-gradient),
