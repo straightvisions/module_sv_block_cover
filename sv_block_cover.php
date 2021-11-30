@@ -33,6 +33,16 @@
 
 			return $this;
 		}
+		protected function register_scripts(): sv_block_cover {
+			parent::register_scripts();
+
+			// Register Styles
+			$this->get_script( 'style_text_shadow' )
+				->set_is_gutenberg()
+				->set_path( 'lib/css/common/style_text_shadow.css' );
+
+			return $this;
+		}
 		public function enqueue_scripts(): sv_block_cover {
 			if(!$this->has_block_frontend('cover')){
 				return $this;
