@@ -1,6 +1,6 @@
 .wp-block-cover{
 	height:auto;
-	margin:auto;
+	margin:0 auto;
 	overflow:visible !important;
 	/* hotfix for broken block for categories */
 	position:relative;
