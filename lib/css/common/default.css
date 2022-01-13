@@ -160,6 +160,9 @@
 	z-index: 1;
 	color: #fff;
 }
+.wp-block-cover-image.is-light .wp-block-cover__inner-container,.wp-block-cover.is-light .wp-block-cover__inner-container{
+	color:#000
+}
 .wp-block-cover-image p:not(.has-text-color),
 .wp-block-cover-image h1:not(.has-text-color),
 .wp-block-cover-image h2:not(.has-text-color),
@@ -173,7 +176,22 @@
 .wp-block-cover h3:not(.has-text-color),
 .wp-block-cover h4:not(.has-text-color),
 .wp-block-cover h5:not(.has-text-color),
-.wp-block-cover h6:not(.has-text-color) {
+.wp-block-cover h6:not(.has-text-color),
+/* Better Selectors for Gutenberg Editor */
+.wp-block-cover-image p:not(.has-text-color),
+.editor-styles-wrapper .wp-block-cover-image h1.wp-block-heading:not(.has-text-color),
+.editor-styles-wrapper .wp-block-cover-image h2.wp-block-heading:not(.has-text-color),
+.editor-styles-wrapper .wp-block-cover-image h3.wp-block-heading:not(.has-text-color),
+.editor-styles-wrapper .wp-block-cover-image h4.wp-block-heading:not(.has-text-color),
+.editor-styles-wrapper .wp-block-cover-image h5.wp-block-heading:not(.has-text-color),
+.editor-styles-wrapper .wp-block-cover-image h6.wp-block-heading:not(.has-text-color),
+.editor-styles-wrapper .wp-block-cover p:not(.has-text-color),
+.editor-styles-wrapper .wp-block-cover h1.wp-block-heading:not(.has-text-color),
+.editor-styles-wrapper .wp-block-cover h2.wp-block-heading:not(.has-text-color),
+.editor-styles-wrapper .wp-block-cover h3.wp-block-heading:not(.has-text-color),
+.editor-styles-wrapper .wp-block-cover h4.wp-block-heading:not(.has-text-color),
+.editor-styles-wrapper .wp-block-cover h5.wp-block-heading:not(.has-text-color),
+.editor-styles-wrapper .wp-block-cover h6.wp-block-heading:not(.has-text-color) {
 	color: inherit;
 }
 .wp-block-cover-image.is-position-top-left,
