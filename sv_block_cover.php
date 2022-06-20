@@ -11,6 +11,7 @@
 				->set_section_template_path()
 				->set_section_order(5000)
 				->set_section_icon('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24h-24z"/></svg>')
+				->set_block_handle('wp-block-cover')
 				->get_root()
 				->add_section( $this );
 		}
