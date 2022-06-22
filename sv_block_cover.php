@@ -12,6 +12,7 @@
 				->set_section_order(5000)
 				->set_section_icon('<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M0 0h24v24h-24z"/></svg>')
 				->set_block_handle('wp-block-cover')
+				->set_block_name('core/cover')
 				->get_root()
 				->add_section( $this );
 		}
@@ -31,16 +32,6 @@
 				->set_title( __( 'Border', 'sv100' ) )
 				->set_is_responsive(true)
 				->load_type( 'border' );
-
-			return $this;
-		}
-		protected function register_scripts(): sv_block_cover {
-			parent::register_scripts();
-
-			// Register Styles
-			$this->get_script( 'style_text_shadow' )
-				->set_is_gutenberg()
-				->set_path( 'lib/css/common/style_text_shadow.css' );
 
 			return $this;
 		}
