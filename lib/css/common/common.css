@@ -3,16 +3,11 @@
 	margin:0 auto;
 	overflow:visible !important;
 	/* hotfix for broken block for categories */
-	position:relative;
-	background-size: cover;
-	background-position: 50%;
-	min-height: 430px;
-	width: 100%;
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	padding: var(--wp--custom--sv-spacing);
-	box-sizing: border-box;
+}
+.wp-block-cover picture,
+.wp-block-cover__inner-container{
+	padding:0 !important;
 }
 
 /* @MB / Gutenberg Fix:
